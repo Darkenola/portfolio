@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/portfolio/hero-section";
 import { HomeOverviewSection } from "@/components/portfolio/home-overview-section";
+import { PoweredBySection } from "@/components/portfolio/powered-by-section";
 import { ProjectSpotlightSection } from "@/components/portfolio/project-spotlight-section";
 import { SiteShell } from "@/components/portfolio/site-shell";
 import { resolveLanguage } from "@/lib/i18n";
@@ -19,6 +20,7 @@ export default async function Home({ searchParams }: HomePageProps) {
   return (
     <SiteShell currentPath="/" lang={lang}>
       <HeroSection lang={lang} profileImageSrc={profileImageSrc} />
+      <PoweredBySection lang={lang} />
       <HomeOverviewSection lang={lang} />
       <ProjectSpotlightSection lang={lang} />
     </SiteShell>
